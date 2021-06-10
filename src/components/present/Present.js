@@ -6,10 +6,12 @@ import Description from "../description/Description";
 
 import "./present.css";
 
-function Present() {
+function Present({ classList }) {
   return (
-    <Card class="present">
-      <Card.Header>Present</Card.Header>
+    <Card className={`${classList ? classList : ""}`}>
+      <Card.Header>
+        <h2>Present</h2>
+      </Card.Header>
       <Card.Body>
         <Row>
           <Col xs={12} md={6} lg={3}>

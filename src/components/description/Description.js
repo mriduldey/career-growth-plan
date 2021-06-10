@@ -7,17 +7,15 @@ import { Card } from "react-bootstrap";
 
 import "./description.css";
 
-function Description({ header, background, cardClass }) {
+function Description({ header, cardClass }) {
   return (
-    <Card
-      bg={background}
-      className={`description-card ${cardClass ? cardClass : ""}`}
-    >
+    <Card className={`description-card ${cardClass ? cardClass : ""}`}>
       {header ? <Card.Header>{header}</Card.Header> : null}
       <Card.Body>
-        <EditorJs tools={EDITOR_JS_TOOLS}  onChange={(x,y,z) => {
-          console.log(x,y,z);
-        }} />
+        <EditorJs
+          tools={EDITOR_JS_TOOLS}
+          onChange={() => {}}
+        />
       </Card.Body>
     </Card>
   );

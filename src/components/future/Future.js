@@ -6,10 +6,12 @@ import Description from "../description/Description";
 
 import { Row, Col } from "react-bootstrap";
 
-function Future() {
+function Future({ classList }) {
   return (
-    <Card>
-      <Card.Header>Future</Card.Header>
+    <Card className={`${classList ? classList : ""}`}>
+      <Card.Header>
+        <h2>Future</h2>
+      </Card.Header>
       <Card.Body>
         <Row>
           <Col xs={12} md={6} lg={4}>
@@ -24,18 +26,18 @@ function Future() {
               <Description header="Personal goals" />
             </DescriptionWrapper>
           </Col>
-          <Col xs={12} md={6} lg={4}>
+          <Col xs={12} md={4} lg={4}>
             <DescriptionWrapper descWrapHeader="Long-term goals (2-5 yrs.)">
               <Description header="Work goals" cardClass="mb-2" />
               <Description header="Personal goals" />
             </DescriptionWrapper>
           </Col>
-          <Col xs={12} md={6}>
+          <Col xs={12} md={4} lg={6}>
             <DescriptionWrapper descWrapHeader="Development needs / skills required">
               <Description />
             </DescriptionWrapper>
           </Col>
-          <Col xs={12} md={6}>
+          <Col xs={12} md={4} lg={6}>
             <DescriptionWrapper descWrapHeader="Action plan">
               <Description />
             </DescriptionWrapper>

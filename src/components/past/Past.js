@@ -5,10 +5,12 @@ import { Card, Row, Col } from "react-bootstrap";
 import DescriptionWrapper from "../HOC/descriptionWrapper/DescriptionWrapper";
 import Description from "../description/Description";
 
-function Past() {
+function Past({ classList }) {
   return (
-    <Card>
-      <Card.Header>Past</Card.Header>
+    <Card className={`${classList ? classList : ""}`}>
+      <Card.Header>
+        <h2>Past</h2>
+      </Card.Header>
       <Card.Body>
         <Row>
           <Col xs={12} md={4}>
