@@ -1,0 +1,9 @@
+.codex-editor--narrow .codex-editor__redactor {
+  padding-bottom: 20px !important;
+}
+
+@media (min-width: 651px) {
+  .codex-editor--narrow .codex-editor__redactor {
+    margin-right: 5px;
+  }
+}
