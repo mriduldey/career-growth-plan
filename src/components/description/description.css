@@ -1,5 +1,22 @@
+.description-card .card-body {
+  padding: 0.5rem !important;
+}
+
 .codex-editor--narrow .codex-editor__redactor {
   padding-bottom: 20px !important;
+  text-align: left;
+}
+
+.ce-block .ce-paragraph, .ce-block .cdx-list li {
+  line-height: 1em;
+}
+
+.ce-block .cdx-list {
+  padding-left: 20px;
+}
+
+.ce-block .cdx-list .cdx-list__item {
+  padding: 4px 0 4px 0;
 }
 
 @media (min-width: 651px) {
